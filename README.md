@@ -16,6 +16,7 @@
  * Start New project, open cmd your folder location and type cmd (npx create-react-app props)
  * Open project folder in the editor.
  * open src folder, and search app.js file, and open the App.js file default code remove, and add this code.
+'''
 `
 import React, { Component } from 'react';
 class App extends React.Component {
@@ -33,10 +34,11 @@ class App extends React.Component {
 }
 export default App;
 `
+'''
 ### Output:-
   * run the server 
   * enter your project folder and enter cmd (npm start)
-![Img](state.png)
+![Img](state.PNG)
 ## Props Definition:-
   * “Props” is a special keyword in React, which stands for properties and is being used for **passing data from one component to another**. But the important part here is that data with props are being passed in a **uni-directional flow**. (one way from parent to child) 
 
