@@ -16,38 +16,26 @@
  * Start New project, open cmd your folder location and type cmd (npx create-react-app props)
  * Open project folder in the editor.
  * open src folder, and search app.js file, and open the App.js file default code remove, and add this code.
+{
 
 `
 import React, { Component } from 'react';
-
 class App extends React.Component {
-
  constructor() {
- 
       super();
-      
       this.state = { name: "Raja" };
-      
       }
-      
       render() {
-      
               return (
-              
                   <div>
-                  
                       <h1> Welcome to  { this.state.name }</h1>
-                      
                   </div>
-                  
               );
-              
      }
-     
 }
-
 export default App;
 `
+}
 ### Output:-
   * run the server 
   * enter your project folder and enter cmd (npm start)
