@@ -18,7 +18,7 @@
  * open src folder, and search app.js file, and open the App.js file default code remove, and add this code.
 {
 
-`
+```
 import React, { Component } from 'react';
 class App extends React.Component {
  constructor() {
@@ -34,7 +34,7 @@ class App extends React.Component {
      }
 }
 export default App;
-`
+```
 }
 ### Output:-
   * run the server 
