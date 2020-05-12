@@ -71,10 +71,87 @@ export default App;
  * JSON is a lightweight format for storing and transporting data.
  * JSON is often used when data is sent from a server to a web page.
  * JSON is "self-describing" and easy to understand.
+ ![json img](jsonimage.PNG)
+ 
  ## JSON Syntax Rules :-
   * Data is in name/value pairs
   * Data is separated by commas
   * Curly braces hold objects
   * Square brackets hold arrays
   ### example JSON Formate:-
-  
+   * JSON arrays are written inside square brackets.
+   ```
+   {
+  "name":[
+    {
+      "name1": {
+        "key" : "value",
+        "key1" : "value"
+      }
+    },
+    {
+      "name1": {
+        "key" : "sdc",
+        "key1" : "ap"
+      }
+        }
+    ]
+}
+```
+## small app By using JOSN rendering
+ * start the new project 
+ * open project folder
+ * create a data folder in src folder
+ * next create a data.json file in data folder and copy code or type the bellow code
+ ```
+ {
+  "profiles":[
+    {
+      "basicInformation": {
+        "firstname" : "Raja",
+        "lastname" : "GK"
+      }
+    },
+    {
+      "basicInformation": {
+        "firstname" : "sdc",
+        "lastname" : "ap"
+      }
+        }
+    ]
+}
+```
+* after that open **App.js** file and type the bellow code
+```
+
+import React from 'react';
+import Data from './data/data.json';
+
+function App(){
+  return(
+    <section>
+           <header className="header">
+           <Home/>
+           </header> <br/> <br/>
+      </section>
+  )
+}
+let Home=()=>{
+    var info=Data.profiles;
+    return(
+        <section className="raja">
+            {info.map((i,index)=>(
+                <div className="card main">
+                  <div className="card-body">
+                      <h2 className="card-title"> {i.basicInformation.firstname} </h2>
+                      <h5 className="card-text"> <em> {i.basicInformation.lastname}</em></h5>
+                   </div>
+                </div>
+            ))}
+        </section>
+    )
+}
+export default App;
+```
+### output bellow
+![json](json.PNG)
