@@ -182,5 +182,68 @@ export default App;
   npm install react-router-dom
   ```
  ## Components in React Router 
-  * **<BrowserRouter>**: It is used for handling the dynamic URL.
-  * **<HashRouter>**: It is used for handling the static request.
+  * **`<BrowserRouter>**`: It is used for handling the dynamic URL.
+  * **`<HashRouter>**`: It is used for handling the static request.
+  
+  ### Small app the router
+   * **Step-1**: In our project, we will create two more components along with App.js, which is already present.
+   * Create a new files named About.js and Contact.js in the components folder and add the following to it:
+   * add bellow code About.js
+   ```
+   import React from 'react'
+   class About extends React.Component {
+     render() {
+       return <h1>About</h1>
+     }
+   }
+   export default About 
+  ```
+  * Add bellow code Contect.js
+   ```
+   import React from 'react'
+   class Contact extends React.Component {
+     render() {
+       return <h1>Contact</h1>
+     }
+   }
+   export default Contact;
+   ```
+
+  * **Step-2**: For Routing, open the App.js file and import all the three component files in it. Here, you need to import line:
+  ```import { Route, Link, BrowserRouter as Router } from 'react-router-dom'```
+  * which helps us to implement the Routing. Now, our App.js file looks like below.
+  
+  ```
+  import React from 'react'
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import About from './About'
+import Contact from './Contact'
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Router>
+         <div>
+           <h1>This is the React Router</h1>
+           <Route path="/home" component={Home} />
+           <Route path="/about" component={About} />
+           <Route path="/contact" component={Contact} />
+         </div>
+       </Router>
+      </div>
+    )
+  }
+}
+let Home=()=>{
+    return(
+      <section>
+        <h3> Home Page </h3>
+      </section>
+    )
+}
+export default App;
+```
+  * Step-3: Open command prompt, go to your project location, and then type npm start. You will get the following screen.
+  
+  ### Output:-
+  ![1](1.PNG) ![1](2.PNG) ![1](3.PNG) ![1](4.PNG)
