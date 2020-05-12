@@ -246,4 +246,74 @@ export default App;
   * Step-3: Open command prompt, go to your project location, and then type npm start. You will get the following screen.
   
   ### Output:-
-  ![1](1.PNG) ![1](2.PNG) ![1](3.PNG) ![1](4.PNG)
+  start page
+  ![1](1.PNG)
+  Home page
+  ![1](2.PNG) 
+  About Page
+  ![1](3.PNG)
+  Contact page
+  ![1](4.PNG)
+  
+  
+  * **Step-4**: In the above screen, you can see that Home component is still rendered. It is because the home path is '/' and about path is '/about', so you can observe that slash is common in both paths which render both components. To stop this behavior, you need to use the exact prop. It can be seen in the below example.
+* add this code in App.js file
+```<Route exact path="/" component={Home} />```
+
+## Adding Navigation using Link component
+ * Sometimes, we want to need multiple links on a single page. When we click on any of that particular Link, it should load that page which is associated with that path without reloading the web page. To do this, we need to import <Link> component in the App.js file.
+ #### What is < Link> component?
+  * This component is used to create links which allow to navigate on different URLs and render its content without reloading the webpage.
+ 
+## Example
+
+* Add this is code in App.js
+
+```
+import React from 'react'
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import About from './About'
+import Contact from './Contact'
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Router>
+         <div>
+           <h1>This is the React Router</h1>
+           <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>  
+          </ul>
+           <Route exact path="/" component={Home} />
+           <Route path="/about" component={About} />
+           <Route path="/contact" component={Contact} />
+         </div>
+       </Router>
+      </div>
+    )
+  }
+}
+let Home=()=>{
+    return(
+      <section>
+        <h3> Home Page </h3>
+      </section>
+    )
+}
+export default App;
+```
+## output
+![h](h.PNG)
+* After adding Link, you can see that the routes are rendered on the screen. Now, if you click on the About, you will see URL is changing and About component is rendered.
+![h](a.PNG)
+
+## Task1:
+Creat app Navigation Bar bellow image
+![nav](nav.PNG)
+
+## Task2:
+
+
+
