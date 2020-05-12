@@ -61,3 +61,8 @@ export default App;
 ## state vs props:-
 
 ![state vs props](statepropsd.PNG)
+
+### example:
+![hai](exp.PNG)
+
+
