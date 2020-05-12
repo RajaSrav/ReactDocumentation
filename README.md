@@ -65,13 +65,15 @@ export default App;
 ### example:
 ![hai](exp.PNG)
 
+## Task1
+
 # JSON Rendering
 
  * JSON stands for ***JavaScript Object Notation***.
  * JSON is a lightweight format for storing and transporting data.
  * JSON is often used when data is sent from a server to a web page.
  * JSON is "self-describing" and easy to understand.
- ![json img](jsonimage.PNG)
+ ![json img](jsonimg.PNG)
  
  ## JSON Syntax Rules :-
   * Data is in name/value pairs
@@ -153,5 +155,32 @@ let Home=()=>{
 }
 export default App;
 ```
+* add your own css or bootstrap
 ### output bellow
 ![json](json.PNG)
+
+##Task1:
+
+# Router
+ * A React Router is a collection of navigational components. These are React components themselves and these React components enable us to navigate among various views or navigate among various pages. Now, the React Router itself provides larger components than route matching components and a navigation components. 
+ * Routing is a process in which a user is directed to different pages based on their action or request. ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
+ ## Need of React Router
+  *React Router plays an important role to ***display multiple views in a single page application***. Without React Router, it is not possible to display multiple views in React applications. Most of the social media websites like Facebook, Instagram uses React Router for rendering multiple views.
+ ## React Router Installation
+  * React contains three different packages for routing. These are:
+   #. ***react-router***: It provides the core routing components and functions for the React Router applications.
+   #. ***react-router-native***: It is used for mobile applications.
+   #. **react-router-dom**: It is used for web applications design.
+  
+   * It is not possible to install react-router directly in your application. To use react routing, first, you need to install react-router-dom modules in your application. The below command is used to install react router dom.
+   * Install and configure your application to use React Router
+   * Configure the routes for React router to enable you to navigate to various pages within your React application
+ ## Installing and Configuring React Router
+  * First install React Router into your project by typing the following at the prompt
+  * open cmdv in your project type bellow cmd.
+  ```
+  npm install react-router-dom
+  ```
+ ## Components in React Router 
+  * **<BrowserRouter>**: It is used for handling the dynamic URL.
+  * **<HashRouter>**: It is used for handling the static request.
