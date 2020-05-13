@@ -64,7 +64,7 @@ export default App;
      2. Then pass it to child component(s) by using Props
      3. Finally, render the Props Data
 
-  ### Below example shows how to pass data with Props:
+  ### Below example how to passing data with Props:
 ```
 import React, { Component } from 'react'
 class App extends Component{
