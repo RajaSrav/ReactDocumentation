@@ -129,7 +129,7 @@ export default App;
     ]
 }
 ```
-## small app By using JOSN rendering
+## small app using JOSN rendering
  * start the new project 
  * open project folder
  * create a data folder in src folder
