@@ -45,6 +45,7 @@ export default App;
 ### Output:-
   * how to run the server 
   * enter into your project folder and open command prompt type cmd (npm start)
+  * output from above code
   
 ![Img](state.PNG)
  
@@ -83,7 +84,8 @@ const ChildComponent = (props) => {
 export default App;
 
 ```
-## output bellow Image
+## output
+  * output from above code
  ![props](props.PNG)
 ## state vs props:-
 
@@ -184,6 +186,7 @@ export default App;
 ```
 * add your own css or bootstrap
 ### output bellow
+  * Output from above code
 ![json](json.PNG)
 
 ##Task1:
