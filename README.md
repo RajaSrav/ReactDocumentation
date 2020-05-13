@@ -44,7 +44,7 @@ export default App;
 
 ### Output:-
   * how to run the server 
-  * enter into your project folder and type cmd (npm start)
+  * enter into your project folder and open command prompt type cmd (npm start)
   
 ![Img](state.PNG)
  
